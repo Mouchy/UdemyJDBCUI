@@ -5,11 +5,14 @@ import com.mycompany.tennis.controller.TournoiController;
 
 public class UI {
 	public static void main(String... args) {
-		JoueurController controller=new JoueurController();
-		controller.afficherDetailsJoueur();
 		
-		TournoiController controller2 = new TournoiController();
-	    controller2.afficherDetailsTournoi();
-	    controller2.creationTournoi();
+		
+		/*TournoiController controller = new TournoiController();*/
+	    /*controller.afficherDetailsTournoi();*/
+		/*controller.creerTournoi();*/
+		/*controller.supprimerTournoi();*/
+		
+		JoueurController controller=new JoueurController();
+		controller.creerJoueur();
 	}
 }

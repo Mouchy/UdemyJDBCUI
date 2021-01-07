@@ -21,4 +21,19 @@ public class JoueurController {
 		System.out.println("Le joueur selectionné s'appelle "+joueur.getPrenom()+" "+joueur.getNom());
 		
 	}
+	
+	public void creerJoueur() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Quel est le nom du joueur ?");
+		String nom=scanner.nextLine();
+		System.out.println("Quel est le prenom du joueur ?");
+		String prenom=scanner.nextLine();
+		System.out.println("Quel est le sexe du joueur ?");
+		char sexe=scanner.nextLine().charAt(0);;
+		Joueur joueur=new Joueur();
+		joueur.setNom(nom);
+		joueur.setPrenom(prenom);
+		joueur.setSexe(sexe);
+		joueurService.createJoueur(joueur);
+	}
 }
