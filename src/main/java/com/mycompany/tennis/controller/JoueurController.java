@@ -36,4 +36,15 @@ public class JoueurController {
 		joueur.setSexe(sexe);
 		joueurService.createJoueur(joueur);
 	}
+	
+	public void renommeJoueur() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Quel est l'identifiant du joueur dont vous voulez renommer ?");
+		long identifiant = scanner.nextLong();
+		scanner.nextLine();
+		System.out.println("Quel est le nom du joueur que vous voulez renommer ?");
+		String nom=scanner.nextLine();
+		joueurService.renomme(identifiant, nom);
+		
+	}
 }

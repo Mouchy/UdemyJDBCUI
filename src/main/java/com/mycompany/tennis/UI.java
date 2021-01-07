@@ -1,7 +1,6 @@
 package com.mycompany.tennis;
 
 import com.mycompany.tennis.controller.JoueurController;
-import com.mycompany.tennis.controller.TournoiController;
 
 public class UI {
 	public static void main(String... args) {
@@ -13,6 +12,7 @@ public class UI {
 		/*controller.supprimerTournoi();*/
 		
 		JoueurController controller=new JoueurController();
-		controller.creerJoueur();
+		/*controller.creerJoueur();*/
+		controller.renommeJoueur();
 	}
 }

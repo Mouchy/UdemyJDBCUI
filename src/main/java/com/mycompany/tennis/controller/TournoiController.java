@@ -2,9 +2,7 @@ package com.mycompany.tennis.controller;
 
 import java.util.Scanner;
 
-import com.mycompany.tennis.core.entity.Joueur;
 import com.mycompany.tennis.core.entity.Tournoi;
-import com.mycompany.tennis.core.service.JoueurService;
 import com.mycompany.tennis.core.service.TournoiService;
 
 public class TournoiController {
