@@ -13,6 +13,7 @@ public class UI {
 		
 		JoueurController controller=new JoueurController();
 		/*controller.creerJoueur();*/
-		controller.renommeJoueur();
+		/*controller.renommeJoueur();*/
+		controller.supprimeJoueur();
 	}
 }

@@ -47,4 +47,13 @@ public class JoueurController {
 		joueurService.renomme(identifiant, nom);
 		
 	}
+	
+	public void supprimeJoueur() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Quel est l'identifiant du joueurà supprimer ?");
+		long identifiant = scanner.nextLong();
+		
+		joueurService.deleteJoueur(identifiant);
+		
+	}
 }
