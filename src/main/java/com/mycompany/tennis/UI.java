@@ -18,7 +18,8 @@ public class UI {
 		/*controller.supprimeJoueur();*/
 		
 		EpreuveController controller=new EpreuveController();
-		controller.afficherDetailsEpreuve();
+		controller.afficheDerniereEpreuve();
+		controller.afficherRolandGarros();
 		
 	}
 }
