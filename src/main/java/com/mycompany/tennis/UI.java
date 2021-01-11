@@ -1,7 +1,6 @@
 package com.mycompany.tennis;
 
-import com.mycompany.tennis.controller.EpreuveController;
-import com.mycompany.tennis.controller.JoueurController;
+import com.mycompany.tennis.controller.MatchController;
 
 public class UI {
 	public static void main(String... args) {
@@ -17,9 +16,7 @@ public class UI {
 		/*controller.renommeJoueur();*/
 		/*controller.supprimeJoueur();*/
 		
-		EpreuveController controller=new EpreuveController();
-		controller.afficheDerniereEpreuve();
-		controller.afficherRolandGarros();
-		
+		MatchController controller=new MatchController();
+		controller.afficheDetailMatch();
 	}
 }
