@@ -18,6 +18,6 @@ public class UI {
 		/*controller.supprimeJoueur();*/
 		
 		MatchController controller=new MatchController();
-		controller.afficheDetailsMatch();
+		controller.tapisVert();
 	}
 }

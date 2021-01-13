@@ -16,6 +16,12 @@ public class MatchController {
 		this.matchService=new MatchService();
 	}
 	
+	public void tapisVert() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Quel est l'identifiant du match dont vous voulez annuler?");
+		long identifiant = scanner.nextLong();
+		matchService.tapisVert(identifiant);
+	}
 	public void afficheDetailsMatch() {
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Quel est l'identifiant du match dont vous voulez afficher les informations");
